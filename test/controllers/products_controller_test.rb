@@ -39,6 +39,14 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to product_url(@product)
   end
 
+  test "can`t destroy product in cart" do
+    assert_difference('Product.count', 0) do
+      delete product_url(products(:two))
+    end
+
+    assert_redirected_to products_url
+  end
+
   test "should destroy product" do
     assert_difference('Product.count', -1) do
       delete product_url(@product)
@@ -46,4 +54,16 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
+  test 'should get products' do
+    get products_url
+    assert_select '.products'
+  end
+
+  test 'should get product list' do
+    get products_url
+    assert_select '.products tr', minimum: 3
+  end
+
+
 end
