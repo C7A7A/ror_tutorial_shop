@@ -32,7 +32,8 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         if (!session[:counter].nil?) then session[:counter] = 0 end
-        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
+        format.html { redirect_to store_index_url, notice: 'Line item was successfully created.' }
+        format.js   { @current_item = @line_item }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
@@ -66,7 +67,7 @@ class LineItemsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html { redirect_to @line_item.cart, notice: 'Line item was successfully removed' }
+      format.html { redirect_to store_index_url, notice: 'Line item was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
