@@ -29,6 +29,18 @@
           <li><a href='/contact'>Contact</a></li>
           <li><span class='nav_span_datetime'><%= Time.now.strftime('%d-%m-%Y %H:%M') %></span></li>
         </ul>
+
+        <% if session[:user_id] %>
+          <nav class='logged_in_nav'>
+            <ul>
+              <li><%= link_to 'Orders',   orders_path %></li>
+              <li><%= link_to 'Products', products_path %></li>
+              <li><%= link_to 'Users',    users_path %></li>
+              <li><%= link_to 'Logout',   logout_path, method: :delete %></li>
+            </ul>
+          </nav>
+        <% end %>
+
       </nav>
 
      <main class='<%= controller.controller_name %>'>
