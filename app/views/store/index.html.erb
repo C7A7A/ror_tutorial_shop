@@ -6,7 +6,7 @@
   <h3> You visited this page <%= session[:counter].to_s + ' ' + @time %> </h3>
 <% end %> 
 
-<h1> Your pragmatic Catalog </h1>
+<h1><%= t('.title_html') %></h1>
 
 <ul class='catalog'>
   <% cache @products do %>
@@ -20,7 +20,7 @@
           </p>
           <div class='price'>
             <%= number_to_currency(product.price, precision: 2, format: '%n %u') %>
-            <%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>
+            <%= button_to t('.add_html'), line_items_path(product_id: product, locale: I18n.locale), remote: true %>
           </div>
         </li>
       <% end %>

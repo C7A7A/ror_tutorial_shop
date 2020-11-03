@@ -39,3 +39,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+# Added by webpack-rails
+/node_modules
+/public/webpack

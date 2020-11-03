@@ -1,4 +1,7 @@
 Rails.application.configure do
+  # Prepare the ingress controller used to receive mail
+  # config.action_mailbox.ingress = :relay
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
@@ -121,4 +124,5 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+  config.active_storage.service = :test
 end
