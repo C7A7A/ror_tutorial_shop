@@ -6,6 +6,9 @@ ruby '2.6.6'
 gem 'i18n-js'
 gem 'webpack-rails'
 
+gem 'haml'
+gem 'haml-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use sqlite3 as the database for Active Record
