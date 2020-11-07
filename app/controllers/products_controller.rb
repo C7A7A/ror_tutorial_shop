@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all.order(:title)
-    render :index
   end
 
   # GET /products/1
