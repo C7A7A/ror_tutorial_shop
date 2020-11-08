@@ -1,0 +1,28 @@
+= form_with(model: order, local: true) do |form|
+  - if order.errors.any?
+    #error_explanation
+      %h2
+        = raw t('errors.template.header',  count: @order.errors.count, model: t('activerecord.models.order'))
+      %p
+        = t('errors.template.body')
+
+      %ul
+        - order.errors.full_messages.each do |message|
+          %li= raw  message
+
+  .field
+    = form.label :name, t('.name')
+    = form.text_field :name, size: 40
+
+  .field
+    = form.label :address, t('.address_html')
+    = form.text_field :address, rows: 3, cols: 40
+
+  .field
+    = form.label :email, t('.email')
+    = form.email_field :email, size: 40
+
+  #pay-type-component
+
+  .actions
+    = form.submit t('.submit')

@@ -1,0 +1,8 @@
+%h1 Editing Order
+
+= render 'form', order: @order
+
+= link_to 'Show', @order
+= link_to 'Back', orders_path
+
+= javascript_pack_tag("pay_type")
