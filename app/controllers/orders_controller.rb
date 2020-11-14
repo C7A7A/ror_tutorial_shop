@@ -111,7 +111,7 @@ class OrdersController < ApplicationController
       @cart_price = @cart.total_price.to_d
       @cart_price = sprintf('%.2f', @cart_price)
 
-      @checksum = Digest::MD5.hexdigest('ms_7dbIUpCXyfH' + '|' + 'sale' + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + 'PLN' + '|' + @time_now.to_s + '|' + 'checksum_key')
+      @checksum = Digest::MD5.hexdigest('ms_7dbIUpCXyfH' + '|' + 'sale' + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + 'PLN' + '|' + @time_now.to_s + '|' + 'UemypI5GUsEz')
     end
 
     # def generate_random_string 
