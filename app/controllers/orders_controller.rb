@@ -21,6 +21,8 @@ class OrdersController < ApplicationController
   # GET /orders/new
   def new
     @order = Order.new
+
+    prepare_order_variables
   end
 
   # GET /orders/1/edit
@@ -41,6 +43,7 @@ class OrdersController < ApplicationController
         format.html { redirect_to store_index_url(locale: I18n.locale), notice: I18n.t('.thanks') }
         format.json { render :show, status: :created, location: @order }
       else
+        prepare_order_variables
         format.html { render :new }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
@@ -99,4 +102,20 @@ class OrdersController < ApplicationController
         redirect_to store_index_url, notice: 'Your cart is empty'
       end
     end
+
+    def prepare_order_variables
+      @secure_string = SecureRandom.uuid
+      @time_now = Time.now.to_i
+
+      @cart = Cart.find(session[:cart_id])
+      @cart_price = @cart.total_price.to_d
+      @cart_price = sprintf('%.2f', @cart_price)
+
+      @checksum = Digest::MD5.hexdigest('ms_7dbIUpCXyfH' + '|' + 'sale' + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + 'PLN' + '|' + @time_now.to_s + '|' + 'checksum_key')
+    end
+
+    # def generate_random_string 
+    #   charset = Array('A'..'Z') + Array('a'..'z')
+    #   Array.new(10) { charset.sample }.join
+    # end
 end

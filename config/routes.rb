@@ -20,4 +20,8 @@ Rails.application.routes.draw do
     resources :carts
     root 'store#index', as: 'store_index', via: :all
   end
+
+  get 'requests/positive_redirect' => 'requests#positive_redirect'
+  get 'requests/negative_redirect' => 'requests#negative_redirect'
+
 end

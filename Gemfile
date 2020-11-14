@@ -9,6 +9,8 @@ gem 'webpack-rails'
 gem 'haml'
 gem 'haml-rails'
 
+gem 'espago', :git => 'https://github.com/espago/espago' 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use sqlite3 as the database for Active Record

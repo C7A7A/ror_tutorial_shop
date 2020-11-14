@@ -1,14 +1,14 @@
-= form_with(model: order, local: true) do |form|
-  - if order.errors.any?
-    #error_explanation
-      %h2
-        = raw t('errors.template.header',  count: @order.errors.count, model: t('activerecord.models.order'))
-      %p
-        = t('errors.template.body')
+= form_with(local: true, url: 'https://sandbox.espago.com/secure_web_page', method: 'post', id: 'espago_secure_web_page') do |form|
+  -# - if order.errors.any?
+  -#   #error_explanation
+  -#     %h2
+  -#       = raw t('errors.template.header',  count: @order.errors.count, model: t('activerecord.models.order'))
+  -#     %p
+  -#       = t('errors.template.body')
 
-      %ul
-        - order.errors.full_messages.each do |message|
-          %li= raw  message
+  -#     %ul
+  -#       - order.errors.full_messages.each do |message|
+  -#         %li= raw  message
 
   .field
     = form.label :name, t('.name')
@@ -21,6 +21,16 @@
   .field
     = form.label :email, t('.email')
     = form.email_field :email, size: 40
+
+  = form.hidden_field :api_version, value: 3
+  = form.hidden_field :app_id, value: 'ms_7dbIUpCXyfH'
+  = form.hidden_field :kind, value: 'sale'
+  = form.hidden_field :session_id, value: @secure_string
+  = form.hidden_field :amount, value: @cart_price
+  = form.hidden_field :currency, value: 'PLN'
+  = form.hidden_field :title, value: 'Zamówienie testowe Mateusz'
+  = form.hidden_field :ts, value: @time_now
+  = form.hidden_field :checksum, value: @checksum
 
   #pay-type-component
 

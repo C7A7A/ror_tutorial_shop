@@ -41,7 +41,7 @@ class OrdersTest < ApplicationSystemTestCase
     fill_in "Account #", with: '987654'
 
     perform_enqueued_jobs do
-      click_button "Update Order"
+      click_button "Place Order"
     end
 
     orders = Order.all
