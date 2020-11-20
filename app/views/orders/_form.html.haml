@@ -11,16 +11,16 @@
   -#         %li= raw  message
 
   .field
-    = form.label :name, t('.name')
-    = form.text_field :name, size: 40
+    = label :order, :name, t('.name')
+    = text_field :order, :name, size: 40
 
   .field
-    = form.label :address, t('.address_html')
-    = form.text_field :address, rows: 3, cols: 40
+    = label :order, :address, t('.address_html')
+    = text_field :order, :address, rows: 3, cols: 40
 
   .field
-    = form.label :email, t('.email')
-    = form.email_field :email, size: 40
+    = label :order, :email, t('.email')
+    = email_field :order, :email, size: 40
 
   = form.hidden_field :api_version, value: 3
   = form.hidden_field :app_id, value: 'ms_7dbIUpCXyfH'
