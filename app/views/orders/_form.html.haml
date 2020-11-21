@@ -23,12 +23,12 @@
     = email_field :order, :email, size: 40
 
   = form.hidden_field :api_version, value: 3
-  = form.hidden_field :app_id, value: 'ms_7dbIUpCXyfH'
-  = form.hidden_field :kind, value: 'sale'
+  = form.hidden_field :app_id, value: @app_id
+  = form.hidden_field :kind, value: @kind
   = form.hidden_field :session_id, value: @secure_string
   = form.hidden_field :amount, value: @cart_price
-  = form.hidden_field :currency, value: 'PLN'
-  = form.hidden_field :title, value: 'Zamówienie testowe Mateusz'
+  = form.hidden_field :currency, value: @currency
+  = form.hidden_field :title, value: @title
   = form.hidden_field :ts, value: @time_now
   = form.hidden_field :checksum, value: @checksum
 

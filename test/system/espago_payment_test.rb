@@ -1,22 +1,8 @@
 require "application_system_test_case"
 
 class EspagoPaymentTest < ApplicationSystemTestCase
-  # setup do
-  #   visit store_index_url
-
-  #   click_on 'Add to Cart', match: :first
-  #   click_on 'Checkout'
-
-  #   click_on 'Place Order'
-  # end
-
   test 'payment executed' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'executed'
@@ -33,12 +19,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment rejected' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'rejected'
@@ -55,12 +36,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment executed 3DS' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'executed 3DS'
@@ -81,12 +57,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment rejected 3DS' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'executed 3DS'
@@ -107,12 +78,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment executed eDCC' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'executed eDCC'
@@ -133,12 +99,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment rejected eDCC' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'rejected eDCC'
@@ -159,12 +120,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment executed 3DS + eDCC' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'executed 3DS + eDCC'
@@ -189,12 +145,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
   end
 
   test 'payment rejected 3DS + eDCC' do
-    visit store_index_url
-
-    click_on 'Add to Cart', match: :first
-    click_on 'Checkout'
-
-    click_on 'Place Order'
+    checkout
 
     fill_in 'transaction_credit_card_attributes_first_name', with: 'espago payment'
     fill_in 'transaction_credit_card_attributes_last_name', with: 'refused 3DS + eDCC'

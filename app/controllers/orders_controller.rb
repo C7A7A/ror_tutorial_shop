@@ -106,16 +106,15 @@ class OrdersController < ApplicationController
     def prepare_order_variables
       @secure_string = SecureRandom.uuid
       @time_now = Time.now.to_i
+      @app_id = 'ms_7dbIUpCXyfH'
+      @kind = 'sale'
+      @currency = 'PLN'
+      @title = 'Zamówienie testowe MC'
 
       @cart = Cart.find(session[:cart_id])
       @cart_price = @cart.total_price.to_d
       @cart_price = sprintf('%.2f', @cart_price)
 
-      @checksum = Digest::MD5.hexdigest('ms_7dbIUpCXyfH' + '|' + 'sale' + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + 'PLN' + '|' + @time_now.to_s + '|' + 'UemypI5GUsEz')
+      @checksum = Digest::MD5.hexdigest(@app_id + '|' + @kind + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + @currency + '|' + @time_now.to_s + '|' + 'UemypI5GUsEz')
     end
-
-    # def generate_random_string 
-    #   charset = Array('A'..'Z') + Array('a'..'z')
-    #   Array.new(10) { charset.sample }.join
-    # end
 end
