@@ -4,6 +4,7 @@ class OrdersTest < ApplicationSystemTestCase
   include ActiveJob::TestHelper
 
   test "visiting the index" do
+    login
     visit orders_url
     assert_selector "h1", text: "Orders"
   end

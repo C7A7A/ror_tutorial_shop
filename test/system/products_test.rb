@@ -2,6 +2,7 @@ require "application_system_test_case"
 
 class ProductsTest < ApplicationSystemTestCase
   setup do
+    login
     @product = products(:one)
   end
 

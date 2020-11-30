@@ -2,4 +2,12 @@
   %h1= t('.legend')
   = render 'form'
 
+  = form_with(local: true, id: 'espago_form', url: '/charge_client', method: 'post') do |form|
+    %script{ async: "", "data-button" => "Pay", "data-id" => "EspagoFrameScript", "data-key" => "VrYVaA1CjmRooKh63YYv", "data-live" => "false", src: "https://js.espago.com/iframe-1.0.js"}
+
+    .actions
+      = form.button 'Iframe', id: 'pay_button'
+
+= javascript_include_tag('https://js.espago.com/espago-1.2.js')
 = javascript_pack_tag('pay_type')
+= javascript_pack_tag('iframe')

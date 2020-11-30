@@ -1,15 +1,4 @@
 = form_with(local: true, url: 'https://sandbox.espago.com/secure_web_page', method: 'post', id: 'espago_secure_web_page') do |form|
-  -# - if order.errors.any?
-  -#   #error_explanation
-  -#     %h2
-  -#       = raw t('errors.template.header',  count: @order.errors.count, model: t('activerecord.models.order'))
-  -#     %p
-  -#       = t('errors.template.body')
-
-  -#     %ul
-  -#       - order.errors.full_messages.each do |message|
-  -#         %li= raw  message
-
   .field
     = label :order, :name, t('.name')
     = text_field :order, :name, size: 40
@@ -22,6 +11,8 @@
     = label :order, :email, t('.email')
     = email_field :order, :email, size: 40
 
+  #pay-type-component
+
   = form.hidden_field :api_version, value: 3
   = form.hidden_field :app_id, value: @app_id
   = form.hidden_field :kind, value: @kind
@@ -31,9 +22,6 @@
   = form.hidden_field :title, value: @title
   = form.hidden_field :ts, value: @time_now
   = form.hidden_field :checksum, value: @checksum
-
-
-  #pay-type-component
 
   .actions
     = form.submit t('.submit')

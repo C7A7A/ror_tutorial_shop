@@ -2,7 +2,11 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-window.I18n = require ("../../../public/javascripts/i18n")
+
+require('jquery')
+//= require jquery_ujs
+
+window.I18n = require("../../../public/javascripts/i18n")
 require("../../../public/javascripts/translations")
 
 require("@rails/ujs").start()

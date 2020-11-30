@@ -2,6 +2,7 @@ require "application_system_test_case"
 
 class LineItemsTest < ApplicationSystemTestCase
   test "visiting the index" do
+    login
     visit line_items_url
     assert_selector "h1", text: "Line Items"
   end

@@ -13,7 +13,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
 
     click_on 'submit_payment'
 
-    click_on 'Powrót do sklepu'
+    click_on 'Back to shop'
 
     assert_text 'POSITIVE REDIRECT'
   end
@@ -30,7 +30,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
 
     click_on 'submit_payment'
 
-    click_on 'Powrót do sklepu'
+    click_on 'Back to shop'
 
     assert_text 'NEGATIVE REDIRECT'
   end
@@ -93,7 +93,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
 
     click_on 'submit_payment'
 
-    click_on 'Powrót do sklepu'
+    click_on 'Back to shop'
 
     assert_text 'POSITIVE REDIRECT'
   end
@@ -114,7 +114,7 @@ class EspagoPaymentTest < ApplicationSystemTestCase
 
     click_on 'submit_payment'
 
-    click_on 'Powrót do sklepu'
+    click_on 'Back to shop'
 
     assert_text 'NEGATIVE REDIRECT'
   end

@@ -106,7 +106,7 @@ class OrdersController < ApplicationController
     def prepare_order_variables
       @secure_string = SecureRandom.uuid
       @time_now = Time.now.to_i
-      @app_id = 'ms_7dbIUpCXyfH'
+      @app_id = 'ms_7dbIUpCXyfH' # TODO: take from yml, add yml to gitignore
       @kind = 'sale'
       @currency = 'PLN'
       @title = 'Zamówienie testowe MC'

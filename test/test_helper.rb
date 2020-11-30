@@ -1,9 +1,11 @@
-ENV['RAILS_ENV'] ||= 'test'
-require_relative '../config/environment'
-require 'rails/test_help'
-require 'simpleCov'
+if ENV['RAILS_ENV'] ||= 'test'
+  require_relative '../config/environment'
+  require 'rails/test_help'
+  require 'simplecov'
 
-SimpleCov.start
+  SimpleCov.start 'rails'
+  puts 'required simpleCov'
+end
 
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
@@ -16,23 +18,14 @@ class ActiveSupport::TestCase
 end
 
 module AuthenticationHelpers
-  def login_as(user)
-    if respond_to? :visit
-      visit login_url
-      fill_in :name, with: user.name
-      fill_in :password, with: 'secret'
-      click_on 'Login'
-    else
-      post login_url, params: { name: user.name, password: 'secret' } 
-    end
-  end
+  
 
   def logout
-    delete logout_url
+    # delete logout_url
   end
 
   def setup
-    login_as users(:one)
+    # login_as users(:one)
   end
 end
 
