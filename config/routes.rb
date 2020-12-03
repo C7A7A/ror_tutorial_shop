@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   scope '(:locale)' do
     resources :orders
+    post 'orders/charge_client' => 'orders#charge_client'
     resources :line_items
     resources :carts
     root 'store#index', as: 'store_index', via: :all

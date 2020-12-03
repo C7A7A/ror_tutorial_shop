@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
   include CurrentCart
 
-  skip_before_action :authorize, only: [:new, :create]
+  skip_before_action :authorize, only: [:new, :create, :charge_client]
 
   before_action :set_cart, only: [:new, :create]
   before_action :ensure_cart_isnt_empty, only: :new
@@ -23,6 +23,7 @@ class OrdersController < ApplicationController
     @order = Order.new
 
     prepare_order_variables
+    prepare_secure_web_page_variables
   end
 
   # GET /orders/1/edit
@@ -74,6 +75,15 @@ class OrdersController < ApplicationController
     end
   end
 
+  def charge_client
+    prepare_order_variables
+    prepare_iframe_variables
+    
+    RestClient.post(@url, { amount: @amount, currency: @currency, description: @description, card: @token}, { Accept: @accept, Authorization: @authorization })
+
+    redirect_to new_orders_url, notice: 'XDDD'
+  end
+
   def pay_type_params
     if order_params[:pay_type] == 'Credit card'
       params.require(:order).permit(:credit_card_number, :expiration_date)
@@ -102,19 +112,33 @@ class OrdersController < ApplicationController
         redirect_to store_index_url, notice: 'Your cart is empty'
       end
     end
-
+    
     def prepare_order_variables
+      @app_id = ESPAGO_CREDENTIALS['app_id']
+      @currency = 'PLN'
+      @description = 'Zamówienie testowe MC'
+    end
+
+    def prepare_secure_web_page_variables
       @secure_string = SecureRandom.uuid
       @time_now = Time.now.to_i
-      @app_id = 'ms_7dbIUpCXyfH' # TODO: take from yml, add yml to gitignore
       @kind = 'sale'
-      @currency = 'PLN'
-      @title = 'Zamówienie testowe MC'
+
+      @public_key = ESPAGO_CREDENTIALS['public_key']
 
       @cart = Cart.find(session[:cart_id])
       @cart_price = @cart.total_price.to_d
       @cart_price = sprintf('%.2f', @cart_price)
+      checksum_key = ESPAGO_CREDENTIALS['checksum_key']
 
-      @checksum = Digest::MD5.hexdigest(@app_id + '|' + @kind + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + @currency + '|' + @time_now.to_s + '|' + 'UemypI5GUsEz')
+      @checksum = Digest::MD5.hexdigest(@app_id + '|' + @kind + '|' + @secure_string.to_s + '|' + @cart_price.to_s + '|' + @currency + '|' + @time_now.to_s + '|' + checksum_key)
+    end
+
+    def prepare_iframe_variables
+      @url = 'https://sandbox.espago.com/api/charges'
+      @accept = 'application/vnd.espago.v3+json'
+      @authorization = @app_id.to_s + ':' + ESPAGO_CREDENTIALS['password_api']
+      @token = params[:card_token]
+      @amount = params[:amount]
     end
 end

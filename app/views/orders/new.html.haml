@@ -1,9 +1,20 @@
+- if notice
+  %p.notice= notice
+
 %section.depot_form
   %h1= t('.legend')
   = render 'form'
 
-  = form_with(local: true, id: 'espago_form', url: '/charge_client', method: 'post') do |form|
-    %script{ async: "", "data-button" => "Pay", "data-id" => "EspagoFrameScript", "data-key" => "VrYVaA1CjmRooKh63YYv", "data-live" => "false", src: "https://js.espago.com/iframe-1.0.js"}
+  = form_with(local: true, id: 'espago_form', url: 'charge_client', method: 'post') do |form|
+    %script{  async: "", 
+              "data-button" => "Pay", 
+              "data-id" => "EspagoFrameScript", 
+              "data-key" => @public_key, 
+              "data-live" => "false",
+              "data-target" => 'espago_form',
+              src: "https://js.espago.com/iframe-1.0.js" }
+    
+    = form.hidden_field :amount, value: @cart_price
 
     .actions
       = form.button 'Iframe', id: 'pay_button'

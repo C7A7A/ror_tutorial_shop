@@ -1,0 +1,1 @@
+ESPAGO_CREDENTIALS = YAML.load_file("#{::Rails.root.to_s}/config/espago_credentials.yml")
