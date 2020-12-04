@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-11-30T20:26:25+01:00">2020-11-30T20:26:25+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-12-04T21:47:52+01:00">2020-12-04T21:47:52+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,9 +43,9 @@
   </div>
 
   <div class="t-line-summary">
-    <b>605</b> relevant lines,
+    <b>638</b> relevant lines,
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>605</b> lines missed. </span>
+    <span class="red"><b>638</b> lines missed. </span>
     (<span class="red">
   0.0%
 </span>
@@ -161,10 +161,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6c35727b6d4c658d6c1c558061c30e2655774fa5" class="src_link" title="app/controllers/orders_controller.rb">app/controllers/orders_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">120</td>
-            <td class="cell--number">88</td>
+            <td class="cell--number">162</td>
+            <td class="cell--number">121</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">88</td>
+            <td class="cell--number">121</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -520,9 +520,9 @@
   </div>
 
   <div class="t-line-summary">
-    <b>403</b> relevant lines,
+    <b>436</b> relevant lines,
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>403</b> lines missed. </span>
+    <span class="red"><b>436</b> lines missed. </span>
     (<span class="red">
   0.0%
 </span>
@@ -605,10 +605,10 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6c35727b6d4c658d6c1c558061c30e2655774fa5" class="src_link" title="app/controllers/orders_controller.rb">app/controllers/orders_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">0.00 %</td>
-            <td class="cell--number">120</td>
-            <td class="cell--number">88</td>
+            <td class="cell--number">162</td>
+            <td class="cell--number">121</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">88</td>
+            <td class="cell--number">121</td>
             <td class="cell--number">0.00</td>
             
           </tr>
@@ -4234,9 +4234,9 @@
     
 
     <div class="t-line-summary">
-      <b>88</b> relevant lines.
+      <b>121</b> relevant lines.
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>88</b> lines missed.</span>
+      <span class="red"><b>121</b> lines missed.</span>
     </div>
 
     
@@ -4286,7 +4286,7 @@
 
             
 
-            <code class="ruby">  skip_before_action :authorize, only: [:new, :create]</code>
+            <code class="ruby">  skip_before_action :authorize, only: [:new, :create, :charge_client]</code>
           </li>
         </div>
       
@@ -4528,18 +4528,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    prepare_secure_web_page_variables</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="missed" data-hits="0" data-linenumber="27">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4550,18 +4550,18 @@
 
             
 
-            <code class="ruby">  # GET /orders/1/edit</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
             
 
-            <code class="ruby">  def edit</code>
+            <code class="ruby">  # GET /orders/1/edit</code>
           </li>
         </div>
       
@@ -4572,18 +4572,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">  def edit</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="missed" data-hits="0" data-linenumber="31">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4594,7 +4594,7 @@
 
             
 
-            <code class="ruby">  # POST /orders</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4605,18 +4605,18 @@
 
             
 
-            <code class="ruby">  # POST /orders.json</code>
+            <code class="ruby">  # POST /orders</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="34">
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
             
 
-            <code class="ruby">  def create</code>
+            <code class="ruby">  # POST /orders.json</code>
           </li>
         </div>
       
@@ -4627,7 +4627,7 @@
 
             
 
-            <code class="ruby">    @order = Order.new(order_params)</code>
+            <code class="ruby">  def create</code>
           </li>
         </div>
       
@@ -4638,29 +4638,29 @@
 
             
 
+            <code class="ruby">    @order = Order.new(order_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="37">
+            
+            
+
+            
+
             <code class="ruby">    @order.add_line_items_from_cart(@cart)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">    respond_to do |format|</code>
           </li>
         </div>
       
@@ -4671,7 +4671,7 @@
 
             
 
-            <code class="ruby">      if @order.save</code>
+            <code class="ruby">    respond_to do |format|</code>
           </li>
         </div>
       
@@ -4682,7 +4682,7 @@
 
             
 
-            <code class="ruby">        Cart.destroy(session[:cart_id])</code>
+            <code class="ruby">      if @order.save</code>
           </li>
         </div>
       
@@ -4693,7 +4693,7 @@
 
             
 
-            <code class="ruby">        session[:cart_id] = nil</code>
+            <code class="ruby">        Cart.destroy(session[:cart_id])</code>
           </li>
         </div>
       
@@ -4704,7 +4704,7 @@
 
             
 
-            <code class="ruby">        ChargeOrderJob.perform_later(@order, pay_type_params.to_h)</code>
+            <code class="ruby">        session[:cart_id] = nil</code>
           </li>
         </div>
       
@@ -4715,7 +4715,7 @@
 
             
 
-            <code class="ruby">        format.html { redirect_to store_index_url(locale: I18n.locale), notice: I18n.t(&#39;.thanks&#39;) }</code>
+            <code class="ruby">        ChargeOrderJob.perform_later(@order, pay_type_params.to_h)</code>
           </li>
         </div>
       
@@ -4726,7 +4726,7 @@
 
             
 
-            <code class="ruby">        format.json { render :show, status: :created, location: @order }</code>
+            <code class="ruby">        format.html { redirect_to store_index_url(locale: I18n.locale), notice: I18n.t(&#39;.thanks&#39;) }</code>
           </li>
         </div>
       
@@ -4737,7 +4737,7 @@
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby">        format.json { render :show, status: :created, location: @order }</code>
           </li>
         </div>
       
@@ -4748,7 +4748,7 @@
 
             
 
-            <code class="ruby">        prepare_order_variables</code>
+            <code class="ruby">      else</code>
           </li>
         </div>
       
@@ -4759,7 +4759,7 @@
 
             
 
-            <code class="ruby">        format.html { render :new }</code>
+            <code class="ruby">        prepare_order_variables</code>
           </li>
         </div>
       
@@ -4770,7 +4770,7 @@
 
             
 
-            <code class="ruby">        format.json { render json: @order.errors, status: :unprocessable_entity }</code>
+            <code class="ruby">        format.html { render :new }</code>
           </li>
         </div>
       
@@ -4781,7 +4781,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">        format.json { render json: @order.errors, status: :unprocessable_entity }</code>
           </li>
         </div>
       
@@ -4792,7 +4792,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -4803,18 +4803,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="missed" data-hits="0" data-linenumber="52">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4825,7 +4825,7 @@
 
             
 
-            <code class="ruby">  # PATCH/PUT /orders/1</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4836,18 +4836,18 @@
 
             
 
-            <code class="ruby">  # PATCH/PUT /orders/1.json</code>
+            <code class="ruby">  # PATCH/PUT /orders/1</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="55">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
             
 
-            <code class="ruby">  def update</code>
+            <code class="ruby">  # PATCH/PUT /orders/1.json</code>
           </li>
         </div>
       
@@ -4858,7 +4858,7 @@
 
             
 
-            <code class="ruby">    respond_to do |format|</code>
+            <code class="ruby">  def update</code>
           </li>
         </div>
       
@@ -4869,7 +4869,7 @@
 
             
 
-            <code class="ruby">      if @order.update(order_params)</code>
+            <code class="ruby">    respond_to do |format|</code>
           </li>
         </div>
       
@@ -4880,7 +4880,7 @@
 
             
 
-            <code class="ruby">        format.html { redirect_to @order, notice: &#39;Order was successfully updated.&#39; }</code>
+            <code class="ruby">      if @order.update(order_params)</code>
           </li>
         </div>
       
@@ -4891,7 +4891,7 @@
 
             
 
-            <code class="ruby">        format.json { render :show, status: :ok, location: @order }</code>
+            <code class="ruby">        format.html { redirect_to @order, notice: &#39;Order was successfully updated.&#39; }</code>
           </li>
         </div>
       
@@ -4902,7 +4902,7 @@
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby">        format.json { render :show, status: :ok, location: @order }</code>
           </li>
         </div>
       
@@ -4913,7 +4913,7 @@
 
             
 
-            <code class="ruby">        format.html { render :edit }</code>
+            <code class="ruby">      else</code>
           </li>
         </div>
       
@@ -4924,7 +4924,7 @@
 
             
 
-            <code class="ruby">        format.json { render json: @order.errors, status: :unprocessable_entity }</code>
+            <code class="ruby">        format.html { render :edit }</code>
           </li>
         </div>
       
@@ -4935,7 +4935,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">        format.json { render json: @order.errors, status: :unprocessable_entity }</code>
           </li>
         </div>
       
@@ -4946,7 +4946,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -4957,18 +4957,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="missed" data-hits="0" data-linenumber="66">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4979,7 +4979,7 @@
 
             
 
-            <code class="ruby">  # DELETE /orders/1</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4990,18 +4990,18 @@
 
             
 
-            <code class="ruby">  # DELETE /orders/1.json</code>
+            <code class="ruby">  # DELETE /orders/1</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="69">
             
             
 
             
 
-            <code class="ruby">  def destroy</code>
+            <code class="ruby">  # DELETE /orders/1.json</code>
           </li>
         </div>
       
@@ -5012,7 +5012,7 @@
 
             
 
-            <code class="ruby">    @order.destroy</code>
+            <code class="ruby">  def destroy</code>
           </li>
         </div>
       
@@ -5023,7 +5023,7 @@
 
             
 
-            <code class="ruby">    respond_to do |format|</code>
+            <code class="ruby">    @order.destroy</code>
           </li>
         </div>
       
@@ -5034,7 +5034,7 @@
 
             
 
-            <code class="ruby">      format.html { redirect_to orders_url, notice: &#39;Order was successfully destroyed.&#39; }</code>
+            <code class="ruby">    respond_to do |format|</code>
           </li>
         </div>
       
@@ -5045,7 +5045,7 @@
 
             
 
-            <code class="ruby">      format.json { head :no_content }</code>
+            <code class="ruby">      format.html { redirect_to orders_url, notice: &#39;Order was successfully destroyed.&#39; }</code>
           </li>
         </div>
       
@@ -5056,7 +5056,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      format.json { head :no_content }</code>
           </li>
         </div>
       
@@ -5067,12 +5067,23 @@
 
             
 
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="76">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="76">
+          <li class="never" data-hits="" data-linenumber="77">
             
             
 
@@ -5083,24 +5094,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="77">
-            
-            
-
-            
-
-            <code class="ruby">  def pay_type_params</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="missed" data-hits="0" data-linenumber="78">
             
             
 
             
 
-            <code class="ruby">    if order_params[:pay_type] == &#39;Credit card&#39;</code>
+            <code class="ruby">  def charge_client</code>
           </li>
         </div>
       
@@ -5111,7 +5111,7 @@
 
             
 
-            <code class="ruby">      params.require(:order).permit(:credit_card_number, :expiration_date)</code>
+            <code class="ruby">    prepare_order_variables</code>
           </li>
         </div>
       
@@ -5122,18 +5122,18 @@
 
             
 
-            <code class="ruby">    elsif order_params[:pay_type] == &#39;Check&#39;</code>
+            <code class="ruby">    prepare_iframe_variables</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="81">
+          <li class="never" data-hits="" data-linenumber="81">
             
             
 
             
 
-            <code class="ruby">      params.require(:order).permit(:routing_number, :account_number)</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -5144,7 +5144,7 @@
 
             
 
-            <code class="ruby">    elsif order_params[:pay_type] == &#39;Purchase order&#39;</code>
+            <code class="ruby">    response =  begin</code>
           </li>
         </div>
       
@@ -5155,7 +5155,7 @@
 
             
 
-            <code class="ruby">      params.require(:order).permit(:po_number)</code>
+            <code class="ruby">                  RestClient.post @url, { amount: @amount, currency: @currency, description: @description, card: @token }, </code>
           </li>
         </div>
       
@@ -5166,7 +5166,7 @@
 
             
 
-            <code class="ruby">    else</code>
+            <code class="ruby">                    { Authorization: @authorization, Accept: @accept }</code>
           </li>
         </div>
       
@@ -5177,7 +5177,7 @@
 
             
 
-            <code class="ruby">      {}</code>
+            <code class="ruby">                rescue RestClient::ExceptionWithResponse =&gt; error</code>
           </li>
         </div>
       
@@ -5188,7 +5188,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">                  return error.response</code>
           </li>
         </div>
       
@@ -5199,7 +5199,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">                end</code>
           </li>
         </div>
       
@@ -5221,56 +5221,23 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">    response_json = JSON.parse(response.body)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="90">
+          <li class="missed" data-hits="0" data-linenumber="90">
             
             
 
             
 
-            <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
+            <code class="ruby">    state = response_json[&#39;state&#39;]</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="91">
-            
-            
-
-            
-
-            <code class="ruby">    def set_order</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="92">
-            
-            
-
-            
-
-            <code class="ruby">      @order = Order.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="93">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="94">
+          <li class="never" data-hits="" data-linenumber="91">
             
             
 
@@ -5281,13 +5248,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="95">
+          <li class="never" data-hits="" data-linenumber="92">
             
             
 
             
 
-            <code class="ruby">    # Only allow a list of trusted parameters through.</code>
+            <code class="ruby">    # puts response_json</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">    if state == &#39;executed&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">      redirect_to requests_positive_redirect_url</code>
           </li>
         </div>
       
@@ -5298,7 +5298,7 @@
 
             
 
-            <code class="ruby">    def order_params</code>
+            <code class="ruby">    elsif state == &#39;rejected&#39; || state == &#39;failed&#39;</code>
           </li>
         </div>
       
@@ -5309,7 +5309,7 @@
 
             
 
-            <code class="ruby">      params.require(:order).permit(:name, :address, :email, :pay_type)</code>
+            <code class="ruby">      redirect_to requests_negative_redirect_url</code>
           </li>
         </div>
       
@@ -5320,18 +5320,18 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    elsif response_json[&#39;redirect_url&#39;] &amp;&amp; state == &#39;new&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="99">
+          <li class="missed" data-hits="0" data-linenumber="99">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      redirect_to response_json[&#39;redirect_url&#39;]</code>
           </li>
         </div>
       
@@ -5342,7 +5342,7 @@
 
             
 
-            <code class="ruby">    def ensure_cart_isnt_empty</code>
+            <code class="ruby">    elsif response_json[&#39;dcc_decision_information&#39;][&#39;redirect_url&#39;] &amp;&amp; state == &#39;dcc_decision&#39;</code>
           </li>
         </div>
       
@@ -5353,7 +5353,7 @@
 
             
 
-            <code class="ruby">      if @cart.line_items.empty?</code>
+            <code class="ruby">      redirect_to response_json[&#39;dcc_decision_information&#39;][&#39;redirect_url&#39;]</code>
           </li>
         </div>
       
@@ -5364,7 +5364,7 @@
 
             
 
-            <code class="ruby">        redirect_to store_index_url, notice: &#39;Your cart is empty&#39;</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -5375,29 +5375,29 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="104">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="105">
+          <li class="never" data-hits="" data-linenumber="104">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="105">
+            
+            
+
+            
+
+            <code class="ruby">  def pay_type_params</code>
           </li>
         </div>
       
@@ -5408,7 +5408,7 @@
 
             
 
-            <code class="ruby">    def prepare_order_variables</code>
+            <code class="ruby">    if order_params[:pay_type] == &#39;Credit card&#39;</code>
           </li>
         </div>
       
@@ -5419,7 +5419,7 @@
 
             
 
-            <code class="ruby">      @secure_string = SecureRandom.uuid</code>
+            <code class="ruby">      params.require(:order).permit(:credit_card_number, :expiration_date)</code>
           </li>
         </div>
       
@@ -5430,7 +5430,7 @@
 
             
 
-            <code class="ruby">      @time_now = Time.now.to_i</code>
+            <code class="ruby">    elsif order_params[:pay_type] == &#39;Check&#39;</code>
           </li>
         </div>
       
@@ -5441,7 +5441,7 @@
 
             
 
-            <code class="ruby">      @app_id = &#39;ms_7dbIUpCXyfH&#39;</code>
+            <code class="ruby">      params.require(:order).permit(:routing_number, :account_number)</code>
           </li>
         </div>
       
@@ -5452,7 +5452,7 @@
 
             
 
-            <code class="ruby">      @kind = &#39;sale&#39;</code>
+            <code class="ruby">    elsif order_params[:pay_type] == &#39;Purchase order&#39;</code>
           </li>
         </div>
       
@@ -5463,7 +5463,7 @@
 
             
 
-            <code class="ruby">      @currency = &#39;PLN&#39;</code>
+            <code class="ruby">      params.require(:order).permit(:po_number)</code>
           </li>
         </div>
       
@@ -5474,18 +5474,18 @@
 
             
 
-            <code class="ruby">      @title = &#39;Zamówienie testowe MC&#39;</code>
+            <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="113">
+          <li class="missed" data-hits="0" data-linenumber="113">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      {}</code>
           </li>
         </div>
       
@@ -5496,7 +5496,7 @@
 
             
 
-            <code class="ruby">      @cart = Cart.find(session[:cart_id])</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -5507,23 +5507,12 @@
 
             
 
-            <code class="ruby">      @cart_price = @cart.total_price.to_d</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="116">
-            
-            
-
-            
-
-            <code class="ruby">      @cart_price = sprintf(&#39;%.2f&#39;, @cart_price)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="117">
+          <li class="never" data-hits="" data-linenumber="116">
             
             
 
@@ -5534,13 +5523,24 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="118">
+          <li class="missed" data-hits="0" data-linenumber="117">
             
             
 
             
 
-            <code class="ruby">      @checksum = Digest::MD5.hexdigest(@app_id + &#39;|&#39; + @kind + &#39;|&#39; + @secure_string.to_s + &#39;|&#39; + @cart_price.to_s + &#39;|&#39; + @currency + &#39;|&#39; + @time_now.to_s + &#39;|&#39; + &#39;UemypI5GUsEz&#39;)</code>
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="118">
+            
+            
+
+            
+
+            <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
           </li>
         </div>
       
@@ -5551,12 +5551,474 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    def set_order</code>
           </li>
         </div>
       
         <div>
           <li class="missed" data-hits="0" data-linenumber="120">
+            
+            
+
+            
+
+            <code class="ruby">      @order = Order.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="121">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="122">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="123">
+            
+            
+
+            
+
+            <code class="ruby">    # Only allow a list of trusted parameters through.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="124">
+            
+            
+
+            
+
+            <code class="ruby">    def order_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="125">
+            
+            
+
+            
+
+            <code class="ruby">      params.require(:order).permit(:name, :address, :email, :pay_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="126">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="127">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="128">
+            
+            
+
+            
+
+            <code class="ruby">    def ensure_cart_isnt_empty</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="129">
+            
+            
+
+            
+
+            <code class="ruby">      if @cart.line_items.empty?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="130">
+            
+            
+
+            
+
+            <code class="ruby">        redirect_to store_index_url, notice: &#39;Your cart is empty&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="131">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="132">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="133">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="134">
+            
+            
+
+            
+
+            <code class="ruby">    def prepare_order_variables</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="135">
+            
+            
+
+            
+
+            <code class="ruby">      @app_id = ESPAGO_CREDENTIALS[&#39;app_id&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="136">
+            
+            
+
+            
+
+            <code class="ruby">      @currency = &#39;PLN&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="137">
+            
+            
+
+            
+
+            <code class="ruby">      @description = &#39;Zamówienie testowe MC&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="138">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="139">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="140">
+            
+            
+
+            
+
+            <code class="ruby">    def prepare_secure_web_page_variables</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="141">
+            
+            
+
+            
+
+            <code class="ruby">      @secure_string = SecureRandom.uuid</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="142">
+            
+            
+
+            
+
+            <code class="ruby">      @time_now = Time.now.to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="143">
+            
+            
+
+            
+
+            <code class="ruby">      @kind = &#39;sale&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="144">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="145">
+            
+            
+
+            
+
+            <code class="ruby">      @public_key = ESPAGO_CREDENTIALS[&#39;public_key&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="146">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="147">
+            
+            
+
+            
+
+            <code class="ruby">      @cart = Cart.find(session[:cart_id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="148">
+            
+            
+
+            
+
+            <code class="ruby">      @cart_price = @cart.total_price.to_d</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="149">
+            
+            
+
+            
+
+            <code class="ruby">      @cart_price = sprintf(&#39;%.2f&#39;, @cart_price)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="150">
+            
+            
+
+            
+
+            <code class="ruby">      checksum_key = ESPAGO_CREDENTIALS[&#39;checksum_key&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="151">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="152">
+            
+            
+
+            
+
+            <code class="ruby">      @checksum = Digest::MD5.hexdigest(@app_id + &#39;|&#39; + @kind + &#39;|&#39; + @secure_string.to_s + &#39;|&#39; + @cart_price.to_s + &#39;|&#39; + @currency + &#39;|&#39; + @time_now.to_s + &#39;|&#39; + checksum_key)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="153">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="154">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="155">
+            
+            
+
+            
+
+            <code class="ruby">    def prepare_iframe_variables</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="156">
+            
+            
+
+            
+
+            <code class="ruby">      @url = &#39;https://sandbox.espago.com/api/charges&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="157">
+            
+            
+
+            
+
+            <code class="ruby">      @accept = &#39;application/vnd.espago.v3+json&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="158">
+            
+            
+
+            
+
+            <code class="ruby">      @authorization = &#39;Basic &#39; + Base64::encode64(&quot;#{@app_id}:#{ESPAGO_CREDENTIALS[&#39;password_api&#39;]}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="159">
+            
+            
+
+            
+
+            <code class="ruby">      @token = params[:card_token]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="160">
+            
+            
+
+            
+
+            <code class="ruby">      @amount = params[:amount]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="161">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="162">
             
             
 

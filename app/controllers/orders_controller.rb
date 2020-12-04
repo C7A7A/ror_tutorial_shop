@@ -79,27 +79,26 @@ class OrdersController < ApplicationController
     prepare_order_variables
     prepare_iframe_variables
     
-    begin
-      response = RestClient.post @url, { amount: @amount, currency: @currency, description: @description, card: @token }, 
-        { Authorization: @authorization, Accept: @accept }
-    rescue RestClient::Unauthorized, RestClient::Forbidden => error
-      puts 'Access denied'
-      return error.response
-    else
-      response_json = JSON.parse(response.body)
-      state = response_json['state']
+    response =  begin
+                  RestClient.post @url, { amount: @amount, currency: @currency, description: @description, card: @token }, 
+                    { Authorization: @authorization, Accept: @accept }
+                rescue RestClient::ExceptionWithResponse => error
+                  return error.response
+                end
 
-      # puts response_json
+    response_json = JSON.parse(response.body)
+    state = response_json['state']
 
-      if state == 'executed'
-        redirect_to requests_positive_redirect_url
-      elsif state == 'rejected' || state == 'failed'
-        redirect_to requests_negative_redirect_url
-      elsif response_json['redirect_url'] && state == 'new'
-        redirect_to response_json['redirect_url']
-      elsif response_json['dcc_decision_information']['redirect_url'] && state == 'dcc_decision'
-        redirect_to response_json['dcc_decision_information']['redirect_url']
-      end
+    # puts response_json
+
+    if state == 'executed'
+      redirect_to requests_positive_redirect_url
+    elsif state == 'rejected' || state == 'failed'
+      redirect_to requests_negative_redirect_url
+    elsif response_json['redirect_url'] && state == 'new'
+      redirect_to response_json['redirect_url']
+    elsif response_json['dcc_decision_information']['redirect_url'] && state == 'dcc_decision'
+      redirect_to response_json['dcc_decision_information']['redirect_url']
     end
   end
 
