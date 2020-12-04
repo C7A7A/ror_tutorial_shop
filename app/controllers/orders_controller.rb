@@ -79,9 +79,28 @@ class OrdersController < ApplicationController
     prepare_order_variables
     prepare_iframe_variables
     
-    RestClient.post(@url, { amount: @amount, currency: @currency, description: @description, card: @token}, { Accept: @accept, Authorization: @authorization })
+    begin
+      response = RestClient.post @url, { amount: @amount, currency: @currency, description: @description, card: @token }, 
+        { Authorization: @authorization, Accept: @accept }
+    rescue RestClient::Unauthorized, RestClient::Forbidden => error
+      puts 'Access denied'
+      return error.response
+    else
+      response_json = JSON.parse(response.body)
+      state = response_json['state']
 
-    redirect_to new_orders_url, notice: 'XDDD'
+      # puts response_json
+
+      if state == 'executed'
+        redirect_to requests_positive_redirect_url
+      elsif state == 'rejected' || state == 'failed'
+        redirect_to requests_negative_redirect_url
+      elsif response_json['redirect_url'] && state == 'new'
+        redirect_to response_json['redirect_url']
+      elsif response_json['dcc_decision_information']['redirect_url'] && state == 'dcc_decision'
+        redirect_to response_json['dcc_decision_information']['redirect_url']
+      end
+    end
   end
 
   def pay_type_params
@@ -137,7 +156,7 @@ class OrdersController < ApplicationController
     def prepare_iframe_variables
       @url = 'https://sandbox.espago.com/api/charges'
       @accept = 'application/vnd.espago.v3+json'
-      @authorization = @app_id.to_s + ':' + ESPAGO_CREDENTIALS['password_api']
+      @authorization = 'Basic ' + Base64::encode64("#{@app_id}:#{ESPAGO_CREDENTIALS['password_api']}")
       @token = params[:card_token]
       @amount = params[:amount]
     end
