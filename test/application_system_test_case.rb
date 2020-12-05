@@ -30,15 +30,4 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     click_on 'Iframe'
     wait_for_ajax
   end
-
-  def login
-    if respond_to? :visit
-      visit login_url
-      fill_in :name, with: users(:one).name
-      fill_in :password, with: 'secret'
-      click_on 'Login'
-    else
-      post login_url, params: { name: user(:one).name, password: 'secret' } 
-    end
-  end
 end

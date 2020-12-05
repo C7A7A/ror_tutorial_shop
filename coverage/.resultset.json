@@ -1,26 +1,82 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/support_request.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/line_item.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/support_request.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/cart.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/order.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
           0,
           0,
           0,
@@ -34,110 +90,90 @@
           0,
           0,
           null,
+          null,
+          0,
+          null,
           0,
           0,
+          null,
           0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/lib/pago.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
           0,
+          null,
           0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
           0,
           null,
           0,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/product.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
           0,
           0,
           0,
           null,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/line_item.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/user.rb": {
         "lines": [
-          0,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
           0,
           0,
           null,
-          0,
           null,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
           null,
@@ -148,12 +184,196 @@
           null,
           null,
           null
-        ],
-        "branches": {
-        }
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/cart.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/application_controller.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          10,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/admin_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/carts_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/line_items_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/orders_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/products_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/requests_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/sessions_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/store_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/connection.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/products_channel.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          7,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/channel.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/admin_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/line_items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
           0,
           0,
           null,
@@ -163,17 +383,97 @@
           0,
           0,
           0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
           0,
           0,
           0,
           null,
           0,
           0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/concerns/current_cart.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/store_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/jobs/application_job.rb": {
         "lines": [
@@ -193,42 +493,6 @@
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/products_channel.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/channel.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/connection.rb": {
-        "lines": [
           0,
           0,
           0,
@@ -277,24 +541,6 @@
         "branches": {
         }
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/concerns/current_cart.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null
-        ],
-        "branches": {
-        }
-      },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/requests_controller.rb": {
         "lines": [
           0,
@@ -303,34 +549,6 @@
           0,
           0,
           null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
           0,
           0,
           0
@@ -687,33 +905,6 @@
         "branches": {
         }
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/sessions_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/carts_controller.rb": {
         "lines": [
           0,
@@ -810,36 +1001,25 @@
         "branches": {
         }
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/store_controller.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/mailboxes/application_mailbox.rb": {
         "lines": [
           0,
-          0,
           null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0
         ],
         "branches": {
         }
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/admin_controller.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/mailboxes/support_mailbox.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -848,180 +1028,996 @@
         ],
         "branches": {
         }
+      }
+    },
+    "timestamp": 1607202221
+  },
+  "Minitest": {
+    "coverage": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/line_item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          85,
+          null,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/line_items_controller.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/application_record.rb": {
         "lines": [
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/store_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/support_request.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/admin_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/cart.rb": {
         "lines": [
+          1,
+          1,
+          null,
+          1,
+          17,
+          17,
           0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          17,
+          null,
+          17,
+          null,
+          null,
+          1,
+          102,
+          null,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/carts_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/order.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/users_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/lib/pago.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
           0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/requests_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/product.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          149,
+          42,
+          42,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          47,
+          1,
+          null,
+          null,
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/application_helper.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          36,
+          17,
+          null,
+          null,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/orders_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/admin_helper.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/sessions_helper.rb": {
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/carts_helper.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/products_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
       "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/line_items_helper.rb": {
         "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/orders_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/products_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/requests_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/sessions_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/store_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/requests_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/connection.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/products_channel.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          92,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/channels/application_cable/channel.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/store_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          19,
+          0,
+          null,
+          19,
+          null,
+          null,
+          19,
+          19,
+          null,
+          19,
+          null,
+          19,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/concerns/current_cart.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          53,
+          null,
+          19,
+          19,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/line_items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          17,
+          17,
+          null,
+          17,
+          17,
+          17,
+          17,
+          34,
+          17,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/orders_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          17,
+          null,
+          17,
+          17,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          8,
+          8,
+          null,
+          null,
+          8,
+          null,
+          null,
+          0,
+          null,
+          null,
+          8,
+          8,
+          null,
+          null,
+          null,
+          8,
+          1,
+          7,
+          1,
+          6,
+          2,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          17,
+          0,
+          null,
+          null,
+          null,
+          1,
+          25,
+          25,
+          25,
+          null,
+          null,
+          1,
+          17,
+          17,
+          17,
+          null,
+          17,
+          null,
+          17,
+          17,
+          17,
+          17,
+          null,
+          17,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          15,
+          15,
+          15,
+          15,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/admin_controller.rb": {
+        "lines": [
+          1,
+          1,
+          15,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/carts_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/controllers/products_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          5,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/jobs/charge_order_job.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/mateusz/Projects/ruby_on_rails_tutorial/app/mailers/order_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
           0,
           0
         ],
@@ -1055,35 +2051,8 @@
         ],
         "branches": {
         }
-      },
-      "/home/mateusz/Projects/ruby_on_rails_tutorial/lib/pago.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1607114872
+    "timestamp": 1607202970
   }
 }

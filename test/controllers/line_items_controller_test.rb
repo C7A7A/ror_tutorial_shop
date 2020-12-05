@@ -2,6 +2,7 @@ require 'test_helper'
 
 class LineItemsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    login
     @line_item = line_items(:one)
   end
 

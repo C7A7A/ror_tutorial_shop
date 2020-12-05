@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    login
     @product = products(:one)
     @title = "The Grat Book #{rand(1000)}"
   end
